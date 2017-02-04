@@ -40,7 +40,7 @@ def generate():
             'Referer': 'https://sleeknoteboxcontent.sleeknote.com/24494.html'
         })
 
-        gen_email = email + '.' + str(randint(0, 999999999)) + '@gmail.com'
+        gen_email = email + '+' + str(randint(0, 999999999)) + '@gmail.com'
 
         r = s.post(base,
                    data={
